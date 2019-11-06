@@ -1,19 +1,19 @@
 spring:
-  proofiles:
+  profiles:
     active:
     - dev
 ---
 spring:
-  proofiles: dev
+  profiles: dev
   application:
     name: config-server-dev
 ---
 spring:
-  proofiles: test
+  profiles: test
   application:
     name: config-server-test
 ---
 spring:
-  proofiles: prod
+  profiles: prod
   application:
     name: config-server-prod
