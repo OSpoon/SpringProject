@@ -2,7 +2,7 @@ spring:
   cloud:
     config:
       name: welcome-server
-      profile: test
+      profile: dev
       lable: master
       uri: http://localhost:3000
       username: admin
