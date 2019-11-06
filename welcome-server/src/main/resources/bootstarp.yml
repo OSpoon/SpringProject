@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: welcome-server
+      profile: dev
+      lable: master
+      uri: http://localhost:3000
