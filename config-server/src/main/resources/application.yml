@@ -13,7 +13,7 @@ spring:
           #1.{application}映射到客户端的 spring.application.name
           #2.{profile}映射到客户端上的 spring.profiles.active
           #3.{label}这是一个服务器端功能，标记”版本”的配置文件集
-          search-paths: config-server/src/main/resources/config/
+          search-paths: config-files/config
           username: zxin088@gmail.com
           password: zx1234567890.
 
