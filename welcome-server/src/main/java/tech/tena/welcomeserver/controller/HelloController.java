@@ -25,8 +25,6 @@ public class HelloController {
     @Autowired
     private DiscoveryClient client;
 
-    @Value("${sang}")
-    String sang;
     @Autowired
     Environment env;
 
@@ -37,14 +35,5 @@ public class HelloController {
             LOG.warn("/hello,host:" + instances.get(i).getHost() + ",service_id:" + instances.get(i).getServiceId());
         }
         return "Hello World";
-    }
-
-    @RequestMapping("/sang")
-    public String sang() {
-        return this.sang;
-    }
-    @RequestMapping("/sang2")
-    public String sang2() {
-        return env.getProperty("sang", "未定义");
     }
 }

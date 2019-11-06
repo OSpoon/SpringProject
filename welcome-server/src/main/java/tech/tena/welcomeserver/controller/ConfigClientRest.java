@@ -1,5 +1,6 @@
 package tech.tena.welcomeserver.controller;
 
+import com.alibaba.fastjson.JSON;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,11 +16,6 @@ public class ConfigClientRest {
 
     @RequestMapping("/config")
     public String getConfig(){
-        System.out.println("applicationName : "+applicationName
-                +"eurekaServers : "+eurekaServers
-                +"port : "+port);
-        return "applicationName : "+applicationName
-                +"eurekaServers : "+eurekaServers
-                +"port : "+port;
+        return "{\"applicationName\":"+applicationName+",\"eurekaServers\":"+eurekaServers+",\"port\":"+port+"}";
     }
 }
