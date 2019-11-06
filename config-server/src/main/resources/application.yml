@@ -10,7 +10,7 @@ spring:
       server:
         git:
           uri: https://github.com/OSpoon/SpringProject.git
-          search-paths: config-repo/{application}/{profile}
+          search-paths: config-server/src/main/resources/config
           username: zxin088@gmail.com
           password: zx1234567890.
 
