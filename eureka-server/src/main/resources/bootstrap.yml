@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      name: eureka-server
+      profile: test
+      lable: master
+      uri: http://localhost:3000
+      username: admin
+      password: 123456
