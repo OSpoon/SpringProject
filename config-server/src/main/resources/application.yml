@@ -1,0 +1,25 @@
+server:
+  port: 3000
+
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/OSpoon/SpringProject.git
+          search-paths: config-repo/{application}/{profile}
+          username: zxin088@gmail.com
+          password: zx1234567890.
+
+  security:
+    user:
+      name: admin
+      password: 123456
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka

@@ -1,0 +1,19 @@
+spring:
+  proofiles:
+    active:
+    - dev
+---
+spring:
+  proofiles: dev
+  application:
+    name: config-server-dev
+---
+spring:
+  proofiles: test
+  application:
+    name: config-server-test
+---
+spring:
+  proofiles: prod
+  application:
+    name: config-server-prod
